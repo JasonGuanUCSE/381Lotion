@@ -1,0 +1,133 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Top{
+  display: flex;
+  flex-direction: row;
+  justify-content : space-between;
+  text-align: center;
+  border-bottom: 1px solid #b3b2b8;
+}
+
+
+
+.Bot {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+#Left {
+  flex: 1;
+  /*background-color: pink;*/
+  border-right: 1px solid #b3b2b8;
+  border-bottom: 1px solid #b3b2b8;
+}
+
+/*Left.js*/
+.LeftTop{
+  display: flex;
+  flex-direction: row;
+  justify-content : space-between;
+  border-bottom : 1px solid #b3b2b8;
+}
+
+.NotesContainer {
+  height: calc(100vh - 160px); 
+  overflow-y: auto; 
+}
+
+.Note{
+  border-bottom: 1px solid #b3b2b8;
+}
+
+#Chosen{
+  background-color: #423c52;
+  color: white;
+}
+
+/*End of Left.js*/
+
+
+/*Right.js*/
+#Right {
+  /*background-color: blue;*/
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #b3b2b8;
+  height: calc(100vh - 110px); 
+}
+
+#empty {
+  margin: auto;
+  height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.editorContainer {
+  display: flex;
+  flex-direction: column;
+ 
+  height: calc(100vh - 110px); 
+}
+
+.editorTop {
+  /*background-color: #b3b2b8;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.editorBottom {
+  height: calc(100vh - 160px); 
+  overflow-y: auto;
+}
+
+.editor {
+  height: calc(100% - 42px);
+}
+
+#notetitle{
+  border: 25px;
+  font-size: 25px;
+  outline: 0;
+}
+
+
+.previewTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.previewTop div:nth-child(1) {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.previewBottom {
+  border-top: 1px solid gray;
+  padding: 20px;
+}
+
+
+/*End of Right.js*/
