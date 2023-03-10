@@ -18,7 +18,6 @@ function Left({notes, addNote, showNoNotes, selectedNote,setSelectedNote}) {
                         <h2>{note.title && note.title.substr(0,15)}</h2>
                         <p>{note.lastModified}</p>
                         <p>{note.content && note.content.substr(0,50).substring(0, 30).replace(/(<([^>]+)>)/gi, '')+ "..."}</p>
-                        <p>{note.noteNum}</p>
                     </div>
                 </div>
             ))}
